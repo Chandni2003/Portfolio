@@ -1,13 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chandni_Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav>
-        
-    </nav>
+<body class="bg-light">
+
+  <!-- Navigation (Sticky and Transparent) -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Chandni Gupta</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section (Intro) -->
+<section id="intro" class="text-center py-5 bg-primary text-white">
+  <div class="container">
+    <h1 class="display-4 animate-heading">Hello, I'm Chandni Gupta</h1>
+    <p class="lead animate-heading">A passionate Web Developer specializing in front-end development with HTML, CSS, JavaScript, and React.js.</p>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+      <h2>About Me</h2>
+      <p>
+          I am a passionate web developer with a knack for crafting intuitive and responsive websites. With expertise in HTML, CSS, JavaScript, and Bootstrap, I strive to turn ideas into impactful digital experiences.
+      </p>
+      <div class="row align-items-center">
+          
+          <!-- Right Side - Personal Information -->
+          <div class="col-md-8 about-info">
+              <div class="row">
+                  <div class="col-md-12">
+                      <strong>Name:</strong> Chandni Gupta
+                  </div>
+                  <div class="col-md-12">
+                      <strong>Date of Birth:</strong> December, 04, 2003
+                  </div>
+                  <div class="col-md-12">
+                      <strong>Address:</strong> North-West Delhi
+                  </div>
+                  <div class="col-md-12">
+                      <strong>ZIP Code:</strong> 110086
+                  </div>
+                  <div class="col-md-12">
+                      <strong>Email:</strong> <a href="mailto:your-email@example.com">guptachandni463@gmail.com</a>
+                  </div>
+                  <div class="col-md-12">
+                      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chandni-gupta-592096319/" target="_blank">LinkedIn Profile</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <h2>My Technical Skills</h2>
+  <div class="skills-container">
+      <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <p>HTML5</p>
+      </div>
+      <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS3</p>
+      </div>
+      <div class="skill-card">
+          <i class="fab fa-bootstrap"></i>
+          <p>Bootstrap 5</p>
+      </div>
+      <div class="skill-card">
+          <i class="fab fa-js-square"></i>
+          <p>JavaScript</p>
+      </div>
+      <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <p>React.js</p>
+      </div>
+      <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <p>SQL Server</p>
+      </div>
+      <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <p>DOM Manipulation</p>
+      </div>
+      <div class="skill-card">
+          <i class="fab fa-microsoft"></i>
+          <p>Microsoft Suite 365</p>
+      </div>
+      <div class="skill-card">
+          <i class="fab fa-adobe"></i>
+          <p>Photoshop</p>
+      </div>
+  </div>
+
+  <h2>Tools I Use</h2>
+  <div class="tools-container">
+      <div class="tool-card">
+          <img src="images/visual studio.ico" alt="VS Code">
+          <p>VS Code</p>
+      </div>
+      <div class="tool-card">
+          <img src="images/github-mark.png" alt="GitHub"> 
+          <p>GitHub</p>
+      </div>
+      <div class="tool-card">
+          <img src="images/figma-logo-.webp" alt="Figma">
+          <p>Figma</p>
+      </div>
+      <div class="tool-card">
+          <img src="images/node js.png" alt="Node.js">
+          <p>Node.js</p>
+      </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center text-dark colorful-heading mb-5">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+          <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body p-4">
+            <h5 class="card-title text-dark">Project 1</h5>
+            <p class="card-text text-muted">This project was designed to enhance my programming skills in HTML, CSS, and JavaScript while learning how to manage interactivity and basic game
+             <br> <b>Game Features:</b>
+User-friendly interface: Clean and intuitive design for easy navigation.
+Random Computer Choice: The computer randomly selects between Stone, Paper, or Scissors, providing a dynamic experience.
+Score Tracking: The game keeps track of the player's score for a competitive touch.
+Restart Option: Start a new game at any time with the restart button.
+            </p>
+            <a href="https://chandni2003.github.io/Stone-Paper-Scissor/" target="_blank"class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
+          <div class="card-body p-4">
+            <h5 class="card-title text-dark">Project 2</h5>
+            <p class="card-text text-muted">A brief description of Project 2 goes here. A more detailed explanation will follow in the project details.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 3">
+          <div class="card-body p-4">
+            <h5 class="card-title text-dark">Project 3</h5>
+            <p class="card-text text-muted">A brief description of Project 3 goes here. A more detailed explanation will follow in the project details.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="text-center text-dark colorful-heading">Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Your Name/Company Name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Your Email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Type Your Message Here" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-3">Connect with me on social media or get in touch!</p>
+    <div class="social-links mb-3">
+      <a href="https://www.linkedin.com/in/chandni-gupta-592096319/" target="_blank" class="social-icon" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/your-instagram" target="_blank" class="social-icon" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/Chandni2003" target="_blank" class="social-icon" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:guptachandni463@gmail.com" class="social-icon" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <p class="mb-0">Feel free to reach out via email or social media for any inquiries.</p>
+    <p class="mt-3">© 2024 My Portfolio | All Rights Reserved</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
